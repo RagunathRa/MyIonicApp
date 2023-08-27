@@ -1,29 +1,45 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonContent, IonImg, IonIcon,   IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+
 import Section from '../components/Section';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
+import { search } from 'ionicons/icons';  
+import LOGO from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/I1.png'
 import './Home.css';
 
 const Home: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        
-        <Section />
-        <Footer />
-        
-      </IonContent>
-    </IonPage>
+    <>
+    <IonMenu contentId="main-content">
+    <IonHeader>
+      <IonToolbar>
+        <IonTitle>Menu Content</IonTitle>
+      </IonToolbar>
+    </IonHeader>
+    <IonContent className="ion-padding">This is the menu content.</IonContent>
+  </IonMenu>
+  <IonPage id="main-content">
+    <IonHeader>
+      <IonToolbar>
+        <IonButtons slot="start">
+          <IonMenuButton></IonMenuButton>
+        </IonButtons>
+        {/* <IonTitle>Menu</IonTitle> */}
+        <IonImg
+        style={{height:'49px'}}
+      src={LOGO}
+      alt="The Wisconsin State Capitol building in Madison, WI at night"
+    ></IonImg>
+     <IonIcon icon={search} slot='end' style={{ marginRight: '40px' }} /> 
+      </IonToolbar>
+    </IonHeader>
+    <IonContent className="ion-padding"> 
+    <Section />
+    {/* <Footer /> */}
+    </IonContent>
+  </IonPage>
+  </>
+
   );
 };
 
