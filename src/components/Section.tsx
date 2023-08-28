@@ -1,18 +1,18 @@
 // import './Section.css';
-import Sec1 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i2-1.png'
-import Sec2 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i3.png'
-import Sec3 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/I4.png'
-import Sec4 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i5.png'
-import Sec5 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i6.png'
-import Sec6 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i7.png'
-import Sec7 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i8.png'
-import Ban1 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/Ban1.jpg'
-import Ban2 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/Ban2.png'
-import Sec8 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i8.1.png'
-import Sec9 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i9.png'
-import Sec10 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i10.png'
-import Sec11 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i11.png'
-// import Sec12 from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/i12.png'
+import Sec1 from '/Images/i2-1.png'
+import Sec2 from '/Images/i3.png'
+import Sec3 from '/Images/I4.png'
+import Sec4 from '/Images/i5.png'
+import Sec5 from '/Images/i6.png'
+import Sec6 from '/Images/i7.png'
+import Sec7 from '/Images/i8.png'
+import Ban1 from '/Images/Ban1.jpg'
+import Ban2 from '/Images/Ban2.png'
+import Sec8 from '/Images/i8.1.png'
+import Sec9 from '/Images/i9.png'
+import Sec10 from '/Images/i10.png'
+import Sec11 from '/Images/i11.png'
+// import Sec12 from '/Images/i12.png'
 
 
 import { IonCol, IonGrid, IonInput, IonRow } from '@ionic/react';
@@ -26,7 +26,7 @@ const Section: React.FC<ContainerProps> = () => {
         <IonRow>
           <IonCol   >
             <IonImg
-              // style={{ height: '209px', }}
+              style={{ height: '209px', }}
               src={Sec1}
               alt="The Wisconsin State Capitol building in Madison, WI at night"
             ></IonImg></IonCol>
@@ -34,14 +34,14 @@ const Section: React.FC<ContainerProps> = () => {
             <p> Luxury hotspots: 5 most expensive high streets in the..</p></IonCol>
           <IonCol>
             <IonImg
-              // style={{ height: '209px', }}
+                 style={{ height: '209px', }}
               src={Sec2}
               alt="The Wisconsin State Capitol building in Madison, WI at night"
             ></IonImg></IonCol>
         </IonRow>
       </IonGrid>
       <IonImg
-              // style={{ height: '209px', }}
+         
               src={Ban1}
               alt="The Wisconsin State Capitol building in Madison, WI at night"
             ></IonImg>
@@ -113,10 +113,10 @@ const Section: React.FC<ContainerProps> = () => {
 
         </IonRow>
       </IonGrid>
-          <IonItem   >
-            <IonLabel>Letest News</IonLabel>
-
-          </IonItem>
+          
+            <h3  style={{ fontWeight: 'bold', display: 'inline' }}>Letest News </h3>
+      <div style={{ borderBottom: '2px solid red',width:'30px', padding: '10px', display: 'flex', alignItems: 'center' }}></div>
+        
       <IonGrid>
         <IonRow>  
      <IonCol>
@@ -135,51 +135,48 @@ const Section: React.FC<ContainerProps> = () => {
       <IonItem style={{ padding:25}} >
         <IonLabel><h1>Croma opens 58 outlets in 6, Croma retails more than 16,000</h1>
 These companies created a lot of hype when they listed on the...</IonLabel>
-
-      </IonItem>
+         </IonItem>
       <IonItem  style={{ padding:25}} >
         <IonLabel><h1>Select Citywalk opens 4 new stores in June</h1>
 These companies created a lot of hype when they listed on the...</IonLabel>
-
-      </IonItem>
-    
-
-      <IonImg
-            style={{ height: '209px', }}
+    </IonItem>
+    <IonImg
+            style={{ height: '209px'}}
             src={Sec7}
             alt="The Wisconsin State Capitol building in Madison, WI at night"
-          ></IonImg>
+          ></IonImg><br/><br/>
   <div style={{backgroundColor:'pink'}}>
   {/* <IonItem style={{backgroundColor:'pink'}}> */}
               <IonGrid fixed={true}>
         <IonRow>
-          <IonCol>   <IonImg
+          <IonCol  size="auto">   <IonImg 
             style={{ height: '50px', }}
             src={Sec8}
             alt="The Wisconsin State Capitol building in Madison, WI at night"
           ></IonImg></IonCol>
           <IonCol>
-          <h1>IR Prime</h1>
-<h3>Top 3  stories of the day</h3>
+            <div  style={{ width: '150px',marginTop:'-20px',fontWeight:'35px'}} > <h1>IR Prime</h1></div>
+             <h3    >Top 3  stories of the day</h3> 
           </IonCol>
-
-        </IonRow>
-      </IonGrid> 
-
+          
+          </IonRow>
+   
+      </IonGrid> <br/>
+  
+      
           {/* </IonItem> */}
-            <IonGrid fixed={true}>
+            <IonGrid  fixed={true}>
         <IonRow>
           <IonCol>   <IonImg
-            style={{ height: '209px', }}
-            src={Sec4}
+             style={{ height: '169px', }} 
+            src={Sec9}
             alt="The Wisconsin State Capitol building in Madison, WI at night"
           ></IonImg></IonCol>
           <IonCol>
-            <h5 style={{ color: 'red' }}> Food & Beverage</h5><p>
+ 
+            <p>
 
-              KFC opens another outlet in Punjab KFC opens another outlet in Punjab
-              # Beverage
-              #reel stories podcast
+            8 retail companies headed by women, These brands are not just famous ...
 
             </p>
           </IonCol>
@@ -189,17 +186,15 @@ These companies created a lot of hype when they listed on the...</IonLabel>
         <IonGrid fixed={true}>
         <IonRow>
           <IonCol>   <IonImg
-            style={{ height: '209px', }}
-            src={Sec4}
+             style={{ height: '169px', }}
+            src={Sec10}
             alt="The Wisconsin State Capitol building in Madison, WI at night"
           ></IonImg></IonCol>
           <IonCol>
-            <h5 style={{ color: 'red' }}> Food & Beverage</h5><p>
+        
+            <p>
 
-              KFC opens another outlet in Punjab KFC opens another outlet in Punjab
-              # Beverage
-              #reel stories podcast
-
+            Joom Marketplace offers a global window for sellers...  
             </p>
           </IonCol>
 
@@ -208,22 +203,35 @@ These companies created a lot of hype when they listed on the...</IonLabel>
         <IonGrid fixed={true}>
         <IonRow>
           <IonCol>   <IonImg
-            style={{ height: '209px', }}
-            src={Sec4}
+            style={{ height: '169px', }}
+            src={Sec11}
             alt="The Wisconsin State Capitol building in Madison, WI at night"
           ></IonImg></IonCol>
           <IonCol>
-            <h5 style={{ color: 'red' }}> Food & Beverage</h5><p>
+           
+            <p>
 
-              KFC opens another outlet in Punjab KFC opens another outlet in Punjab
-              # Beverage
-              #reel stories podcast
-
+            FreshToHome fixing a broken meat market retailing in...
             </p>
           </IonCol>
         </IonRow>
-      </IonGrid>
-      </div>
+      </IonGrid>  
+    
+      </div><br/>
+      <h3  style={{ fontWeight: 'bold', display: 'inline' }}>Web Special </h3>
+      <div style={{ borderBottom: '2px solid red',width:'30px', padding: '10px', display: 'flex', alignItems: 'center' }}>
+
+</div>
+
+     
+      <IonImg
+            style={{padding:'10px' }}
+            src={Ban2}
+            alt="The Wisconsin State Capitol building in Madison, WI at night"
+          ></IonImg>
+      
+
+
     </div>
   );
 };

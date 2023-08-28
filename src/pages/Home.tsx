@@ -4,7 +4,7 @@ import { IonButtons, IonContent, IonImg, IonIcon,   IonHeader, IonMenu, IonMenuB
 import Section from '../components/Section';
 // import Footer from '../components/Footer';
 import { search } from 'ionicons/icons';  
-import LOGO from '/Users/johnj/Ragu/R4/R5/MyIonicApp/public/I1.png'
+import LOGO from '/Images/I1.png';  
 import './Home.css';
 
 const Home: React.FC = () => {
